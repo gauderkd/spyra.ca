@@ -1,0 +1,184 @@
+@font-face {
+    font-family: "King Basil Lite";
+    src: url('/fonts/King-Basil-Lite.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/King-Basil-Lite.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/fonts/King-Basil-Lite.woff2') format('woff2'), /* Super Modern Browsers */
+        url('/fonts/King-Basil-Lite.woff') format('woff'), /* Pretty Modern Browsers */
+        url('/fonts/King-Basil-Lite.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('/fonts/King-Basil-Lite.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: "Fabrica";
+        src: url('/fonts/Fabrica.eot'); /* IE9 Compat Modes */
+        src: url('/fonts/Fabrica.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('/fonts/Fabrica.woff2') format('woff2'), /* Super Modern Browsers */
+            url('/fonts/Fabrica.woff') format('woff'), /* Pretty Modern Browsers */
+            url('/fonts/Fabrica.ttf')  format('truetype'), /* Safari, Android, iOS */
+            url('/fonts/Fabrica.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+p {
+    font-family: Fabrica;
+    font-size: 20px;
+}
+
+.keys-container {
+    top: 200px;
+    position: relative;
+}
+.header-container {
+    background-color: #A3DF85;
+}
+
+.backgroundblock{
+    background-color: #A3DF85;
+    width: 100%;
+    height: 455px;
+}
+
+.img_wrapper {
+    max-width: 300px;
+    margin: 0 auto;
+    top: 0px;
+    position: relative;
+}
+
+.profile_column {
+    height:85px;
+}
+
+.title_wrapper {
+    top: 10px;
+    max-width: 600px;
+}
+
+.image-row {
+
+}
+
+.profile_pic {
+    vertical-align: middle;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+    position:relative;
+
+}
+
+.dmllogo, .mcmasterlogo {
+    width: 130px;
+    top: 25px;
+    position: relative;
+}
+
+.title {
+    width: 100%;
+    position: relative;
+}
+
+.dmllogo {
+    float: right;
+    right: 20px;
+}
+
+.mcmasterlogo {
+    float: left;
+    left: 20px;
+}
+
+#name {
+    font-family: King Basil Lite;
+    font-size: 125px;
+    color: black;
+    text-align: center;
+    top: 50px;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-bottom: 10px;
+}
+
+.keys {
+padding-left: 15px;
+    padding-right: 15px;
+    white-space: normal;
+    text-align: center;
+}
+
+.background, .foreground {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.background {
+    z-index: 1;
+}
+
+.foreground {
+    z-index: 2;
+}
+
+.link-icons-container {
+    position: relative;
+    top: 215px;
+}
+
+.link-icon {
+    font-size: 70px !important;
+}
+
+.row {
+    padding-bottom: 60px;
+}
+
+.menurow {
+  padding-bottom: 0px;
+  margin-left: 0px;
+  display: none;
+}
+
+.menubox {
+border-bottom: 2px solid grey;
+}
+
+.menubox:hover {
+  background-color: #86b96d;
+  cursor:pointer;
+}
+
+.menuitem {
+  margin: 0px;
+  text-align: center;
+}
+
+.sub-header {
+
+}
+
+.sub-header-title {
+  max-width: 200px;
+}
+.sub-header-row {
+  padding-bottom: 20px;
+}
+
+.sub-title-wrapper {
+  max-width: 200px;
+}
+
+.about_container {
+  padding-right: 25%;
+  padding-left: 25%;
+}
+
+.jumbotron-edit {
+  background-color:inherit;
+}

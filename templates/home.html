@@ -1,0 +1,70 @@
+{%  extends "layout.html" %}
+{%  block content %}
+    <div class="foreground">
+        <div class="container-fluid header-container">
+            <div class="row image-row">
+                <div class="col-xs-5">
+                    <img class="mcmasterlogo img-responsive" src="{{ url_for('static', filename='elements/McMaster.png') }}">
+                </div>
+                <div class="col-xs-2"></div>
+                <div class="col-xs-5">
+                    <img class="dmllogo img-responsive" src="{{ url_for('static', filename='elements/DML.png') }}">
+                </div>
+            </div>
+            <div class="row image-row">
+                <div class="col-xs-12">
+                    <div class="img_wrapper title_wrapper">
+                        <img class="title img-responsive" src="{{ url_for('static', filename='elements/Jo Spyra Title.png') }}">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 profile_column">
+                    <div class="img_wrapper">
+                        <img class="profile_pic" src="{{ url_for('static', filename='elements/jo_spyra.jpg') }}">
+                    </div>
+                </div>
+            </div>
+            <div class="row menurow">
+              <div class="col-xs-1 menubox">
+                <p class="menuitem">About</p>
+              </div>
+              <div class="col-xs-1 menubox">
+                <p class="menuitem">CV</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="container-fluid keys-container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <p class="keys">Music Cognition</p>
+                </div>
+                <div class="col-sm-3">
+                    <p class="keys">Memory</p>
+                </div>
+                <div class="col-sm-3">
+                    <p class="keys">Evolution</p>
+                </div>
+                <div class="col-sm-3">
+                    <p class="keys">Computational Models</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-2" align="center">
+                    <a href="https://ca.linkedin.com/in/joanna-spyra-89420547">
+                        <i class="fa fa-linkedin-square link-icon" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="col-sm-2" align="center">
+                    <a href="https://www.etsy.com/ca/shop/PumpernickelCottage">
+                        <i class="fa fa-paint-brush link-icon"></i>
+                    </a>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
