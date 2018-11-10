@@ -1,12 +1,49 @@
 {% include "layout.html" %}
 
-<div class="container-fluid header-container sub-header">
-  <div class="row image-row sub-header-row">
-      <div class="col-xs-12">
-          <div class="img_wrapper title_wrapper sub-title-wrapper">
-              <img class="title img-responsive sub-header-title" src="{{ url_for('static', filename='elements/Jo Spyra Title.png') }}">
+<div class="container-fluid header-container sub-header-container">
+  <div class="row image-row header_logos">
+      <div class="col-xs-5">
+        <a href="https://www.science.mcmaster.ca/pnb/">
+          <img class="mcmasterlogo img-responsive" src="{{ url_for('static', filename='elements/McMaster.png') }}">
+        </a>
+      </div>
+      <div class="col-xs-2">
+          <div class="img_wrapper sub-title-wrapper">
+            <a href="{{ url_for('home')}}">
+              <img class="title img-responsive" src="{{ url_for('static', filename='elements/Jo Spyra Title.png') }}">
+              </a>
           </div>
       </div>
+      <div class="col-xs-5">
+          <a href="http://digitalmusiclab.org/">
+            <img class="dmllogo img-responsive" src="{{ url_for('static', filename='elements/DML.png') }}">
+          </a>
+      </div>
+  </div>
+  <div class="row menurow">
+    <div class="col-xs-3"></div>
+    <div class="col-xs-1">
+      <a href="{{ url_for('about')}}">
+        <p class="menuitem">About Me</p>
+      </a>
+    </div>
+    <div class="col-xs-1">
+      <a href="{{ url_for('research')}}">
+      <p class="menuitem">Research</p>
+      </a>
+    </div>
+    <div class="col-xs-2"></div>
+    <div class="col-xs-1">
+      <a href="{{ url_for('cv')}}">
+      <p class="menuitem">CV</p>
+      </a>
+    </div>
+    <div class="col-xs-1">
+      <a href="{{ url_for('contact')}}">
+      <p class="menuitem">Contact</p>
+      </a>
+    </div>
+    <div class="col-xs-3"></div>
   </div>
 </div>
 

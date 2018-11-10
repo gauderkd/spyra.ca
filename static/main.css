@@ -1,21 +1,21 @@
 @font-face {
     font-family: "King Basil Lite";
-    src: url('/fonts/King-Basil-Lite.eot'); /* IE9 Compat Modes */
-    src: url('/fonts/King-Basil-Lite.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('/fonts/King-Basil-Lite.woff2') format('woff2'), /* Super Modern Browsers */
-        url('/fonts/King-Basil-Lite.woff') format('woff'), /* Pretty Modern Browsers */
-        url('/fonts/King-Basil-Lite.ttf')  format('truetype'), /* Safari, Android, iOS */
-        url('/fonts/King-Basil-Lite.svg#svgFontName') format('svg'); /* Legacy iOS */
+    src: url('fonts/King-Basil-Lite.eot'); /* IE9 Compat Modes */
+    src: url('fonts/King-Basil-Lite.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('fonts/King-Basil-Lite.woff2') format('woff2'), /* Super Modern Browsers */
+        url('fonts/King-Basil-Lite.woff') format('woff'), /* Pretty Modern Browsers */
+        url('fonts/King-Basil-Lite.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('fonts/King-Basil-Lite.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
     font-family: "Fabrica";
-        src: url('/fonts/Fabrica.eot'); /* IE9 Compat Modes */
-        src: url('/fonts/Fabrica.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-            url('/fonts/Fabrica.woff2') format('woff2'), /* Super Modern Browsers */
-            url('/fonts/Fabrica.woff') format('woff'), /* Pretty Modern Browsers */
-            url('/fonts/Fabrica.ttf')  format('truetype'), /* Safari, Android, iOS */
-            url('/fonts/Fabrica.svg#svgFontName') format('svg'); /* Legacy iOS */
+        src: url("fonts/fabrica.eot"); /* IE9 Compat Modes */
+        src: url("fonts/fabrica.eot?#iefix") format('embedded-opentype'), /* IE6-IE8 */
+            url("fonts/fabrica.woff2") format('woff2'), /* Super Modern Browsers */
+            url("fonts/fabrica.woff") format('woff'), /* Pretty Modern Browsers */
+            url("fonts/fabrica.ttf")  format('truetype'), /* Safari, Android, iOS */
+            url("fonts/fabrica.svg#svgFontName") format('svg'); /* Legacy iOS */
 }
 
 body {
@@ -28,12 +28,44 @@ p {
     font-size: 20px;
 }
 
-.keys-container {
-    top: 200px;
+.body-container {
+    top: 600px;
     position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
 }
+
 .header-container {
     background-color: #A3DF85;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    transition: all 0.5s;
+}
+
+.sub-header-container {
+  height: 90px;
+  transition: all 0.5s;
+}
+
+.menurow {
+  height: 225px;
+  position: relative;
+  top: -55px;
+  transition: all 0.5s;
+}
+
+.menurow-home {
+  top: 180px;
+  transition: all 0.5s;
+}
+
+.header-picture {
+
+}
+
+.header_logos {
+  padding-bottom: 25px;
 }
 
 .backgroundblock{
@@ -45,21 +77,27 @@ p {
 .img_wrapper {
     max-width: 300px;
     margin: 0 auto;
-    top: 0px;
     position: relative;
+    z-index: 15;
+    top: 0px;
+    transition: all 0.5s;
 }
 
-.profile_column {
-    height:85px;
+.sub-header-picture {
+  top: -800px;
+  transition: all 0.5s;
 }
 
 .title_wrapper {
-    top: 10px;
-    max-width: 600px;
+    top: 50px;
+    max-width: 800px;
+    transition: all 0.5s;
 }
 
-.image-row {
-
+.sub-title-wrapper {
+    top: 10px;
+    max-width: 200px;
+    transition: all 0.5s;
 }
 
 .profile_pic {
@@ -69,7 +107,7 @@ p {
     width: 100%;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
     position:relative;
-
+    z-index: 6;
 }
 
 .dmllogo, .mcmasterlogo {
@@ -135,15 +173,6 @@ padding-left: 15px;
     font-size: 70px !important;
 }
 
-.row {
-    padding-bottom: 60px;
-}
-
-.menurow {
-  padding-bottom: 0px;
-  margin-left: 0px;
-  display: none;
-}
 
 .menubox {
 border-bottom: 2px solid grey;
@@ -157,21 +186,16 @@ border-bottom: 2px solid grey;
 .menuitem {
   margin: 0px;
   text-align: center;
+  position: relative;
+  top:
 }
 
-.sub-header {
-
+.profile_column {
+  bottom: 85px;
 }
 
-.sub-header-title {
-  max-width: 200px;
-}
 .sub-header-row {
   padding-bottom: 20px;
-}
-
-.sub-title-wrapper {
-  max-width: 200px;
 }
 
 .about_container {
@@ -181,4 +205,5 @@ border-bottom: 2px solid grey;
 
 .jumbotron-edit {
   background-color:inherit;
+  padding-top: 100px;
 }
