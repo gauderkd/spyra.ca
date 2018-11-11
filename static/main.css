@@ -9,7 +9,7 @@
 }
 
 @font-face {
-    font-family: "Fabrica";
+    font-family: "fabrica";
         src: url("fonts/fabrica.eot"); /* IE9 Compat Modes */
         src: url("fonts/fabrica.eot?#iefix") format('embedded-opentype'), /* IE6-IE8 */
             url("fonts/fabrica.woff2") format('woff2'), /* Super Modern Browsers */
@@ -29,7 +29,7 @@ p {
 }
 
 .body-container {
-    top: 600px;
+    top: 1000px;
     position: relative;
     padding-left: 30px;
     padding-right: 30px;
@@ -44,24 +44,7 @@ p {
 }
 
 .sub-header-container {
-  height: 90px;
   transition: all 0.5s;
-}
-
-.menurow {
-  height: 225px;
-  position: relative;
-  top: -55px;
-  transition: all 0.5s;
-}
-
-.menurow-home {
-  top: 180px;
-  transition: all 0.5s;
-}
-
-.header-picture {
-
 }
 
 .header_logos {
@@ -71,11 +54,11 @@ p {
 .backgroundblock{
     background-color: #A3DF85;
     width: 100%;
-    height: 455px;
 }
 
 .img_wrapper {
-    max-width: 300px;
+    min-width: 200px;
+    max-width: 400px;
     margin: 0 auto;
     position: relative;
     z-index: 15;
@@ -83,8 +66,12 @@ p {
     transition: all 0.5s;
 }
 
+.pic_wrapper {
+  max-height: 250px;
+}
+
 .sub-header-picture {
-  top: -800px;
+  top: -700px;
   transition: all 0.5s;
 }
 
@@ -108,6 +95,7 @@ p {
     box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
     position:relative;
     z-index: 6;
+    top: 75px;
 }
 
 .dmllogo, .mcmasterlogo {
@@ -184,10 +172,19 @@ border-bottom: 2px solid grey;
 }
 
 .menuitem {
+  top: 0px;
   margin: 0px;
   text-align: center;
   position: relative;
-  top:
+  padding-top: 25px;
+  transition: all 0.5s;
+  font-size: 1.4em;
+  white-space: nowrap;
+}
+
+.menuitem_home {
+  top: 700px;
+  transition: all 0.5s;
 }
 
 .profile_column {

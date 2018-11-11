@@ -1,23 +1,26 @@
 $(function() {
     var header = $(".header-container");
-    var header_picture = $(".img_wrapper");
+    var picture_header = $(".pic_wrapper");
+    var picture = $(".profile_pic");
     var header_title = $(".title_wrapper");
     var header_title_row = $('.header-title');
-    var menu = $('.menurow-home');
+    var menu = $('.menuitem');
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
-        if (scroll >= 200) {
+        if (scroll >= 100) {
             header.addClass("sub-header-container");
-            header_picture.addClass("sub-header-picture");
+            picture.css({ top: -550, transition: 'all 0.5s' });
+            picture_header.css({ 'max-height': 0, transition: 'max-height 0.5s'});
             header_title.removeClass("title_wrapper").addClass("sub-title-wrapper");
-            menu.removeClass("menurow-home")
+            menu.removeClass("menuitem_home");
 
         } else {
             header.removeClass("sub-header-container");
-            header_picture.removeClass("sub-header-picture");
+            picture.css({ top: 75, transition: 'all 0.5s' });
+            picture_header.css({ 'max-height': 250, transition: 'max-height 0.5s'});
             header_title.removeClass("sub-title-wrapper").addClass("title_wrapper");
-            menu.addClass("menurow-home")
+            menu.addClass("menuitem_home");
         }
     });
 });
